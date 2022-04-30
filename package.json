@@ -1,5 +1,5 @@
 {
-  "name": "testing-regres-ui",
+  "name": "ui-regression-testing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -67,7 +67,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook"
   },
   "eslintConfig": {
     "extends": [
@@ -144,6 +146,12 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "0.0.11",
     "jest-watch-typeahead": "^0.6.5"
   }
 }
